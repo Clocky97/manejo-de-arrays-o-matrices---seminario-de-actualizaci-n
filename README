@@ -1,0 +1,46 @@
+# Manejo de arrays / matrices (Personas)
+
+Este repositorio contiene un programa de línea de comandos en **JavaScript (Node.js)** que permite cargar datos de varias personas (nombre, edad, nota), mostrar la lista tal como fue ingresada, luego mostrar la lista ordenada por nota de mayor a menor y finalmente calcular el promedio de notas.
+
+---
+
+## 🛠️ Requisitos
+
+- Tener instalado **Node.js** (v14+ recomendada)
+
+---
+
+## ▶️ Cómo ejecutar
+
+1. Abre una terminal en este directorio.
+2. Ejecuta:
+
+```bash
+node app.js
+```
+
+3. Sigue las indicaciones en pantalla.
+
+- Para terminar la carga de personas, escribe **terminar** o **fin** cuando se pida el nombre.
+
+---
+
+## 📌 Qué hace el programa
+
+1. Pide al usuario ingresar datos para cada persona:
+   - Nombre
+   - Edad
+   - Nota
+
+2. Al finalizar, muestra:
+   - La lista completa de personas en el orden ingresado.
+   - La lista ordenada por nota (de mayor a menor).
+   - El promedio general de todas las notas.
+
+---
+
+## 🧠 Estructura interna (algoritmo)
+
+- Se usa una matriz donde cada fila es: `[nombre, edad, nota]`.
+- Para ordenar, se genera una copia de la lista y se ordena por la columna `nota`.
+- El promedio se calcula sumando todas las notas y dividiendo por la cantidad de personas.
